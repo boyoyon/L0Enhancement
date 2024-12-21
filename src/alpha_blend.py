@@ -126,9 +126,9 @@ def main():
             dst = dst.astype(np.uint8)
 
             base1 = os.path.basename(argv[1])
-            filename1 = os.path.splitext(base1)
+            filename1 = os.path.splitext(base1)[0]
             base2 = os.path.basename(argv[2])
-            filename2 = os.path.splitext(base2)
+            filename2 = os.path.splitext(base2)[0]
             dst_path = 'blend_%s_%s.png' % (filename1, filename2)
             cv2.imwrite(dst_path, dst)
 
