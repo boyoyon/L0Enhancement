@@ -15,7 +15,21 @@
             <a href="https://www.cse.cuhk.edu.hk/~leojia/papers/L0smooth_Siggraph_Asia2011.pdf">Image Smoothing via L0 Gradient Minimization</a><br>
             <img src="images/L0enhancement2.svg"><br>
         </p>
+        <p>
+        <a href="https://github.com/safaa-alnabulsi/ILS/tree/main">ここ</a> にIterative Least Squares による L0 smoothing 高速化版の python 実装 notebook が載っていたので使わせてもらう。<br>       
+        </p>
         <h2>環境構築方法</h2>
+        <p>
+        pip install opencv-python pyfftw
+        </p>
+        <h2>使い方</h2>       
+        <p>
+        python l0enhance.py (画像ファイル)<br>
+        ・矢印キー押下でαブレンディングのα値を増減する<br>
+        ・s キー押下で保存～終了<br>
+        ・そのほかのキー押下で保存せずに終了
+        </p>
+        <h2>旧版</h2>
         <p>
             <a href="https://github.com/nrupatunga/L0-Smoothing/">https://github.com/nrupatunga/L0-Smoothing/</a><br>
             Code → Download ZIP<br>
