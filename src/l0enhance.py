@@ -127,12 +127,14 @@ def main():
         elif key == ord('+'):
             SCALE *= 1.1
 
-        elif key == ord('s'):
+        elif key == ord('s') or key == ord('S'):
             dst = AlphaBlend(src1, src2, ALPHA)
             dst *= 255.0
             dst = np.clip(dst, 0, 255)
             dst = dst.astype(np.uint8)
             cv2.imwrite('blend.png', dst)
+            print('save blend.png')
+            break
 
         elif key == ESC_KEY:
             break
