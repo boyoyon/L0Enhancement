@@ -103,7 +103,7 @@ def main():
             clone3 = np.clip(dst *255, 0,255).astype(np.uint8)
             
             cv2.putText(clone3, 'alpha: %.1f' % ALPHA, 
-                font_pos, font, font_size, font_color, 1)
+                font_pos, font, font_size, font_color, 2)
             cv2.imshow('blend', clone3)
             fUPDATE = False
 
